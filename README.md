@@ -44,7 +44,7 @@ You also need to pass the middleware to the server for inclusion.
 
 ## License
 
-Copyright © 2015 FIXME
+Copyright © 2015 Emil Bengtsson
 
 Distributed under the Eclipse Public License either version 1.0 or (at
 your option) any later version.
