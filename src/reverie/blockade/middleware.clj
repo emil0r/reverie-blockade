@@ -12,7 +12,7 @@
 (defn- get-ip [request]
   (if-let [ip (get-in request [:headers "x-forwarded-for"])]
     (-> ip
-        (str/split ",")
+        (str/split #",")
         first)
     (:remote-addr request)))
 
