@@ -3,7 +3,7 @@
             [reverie.database :as db]
             [yesql.core :refer [defqueries]]))
 
-(defqueries "reverie/blockade/queries/blockade.sql")
+(defqueries "queries/modules/blockade.sql")
 
 (defn- get-domain [referer]
   (if referer

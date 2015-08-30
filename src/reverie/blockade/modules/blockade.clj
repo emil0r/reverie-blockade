@@ -6,7 +6,7 @@
 (defmodule blockade
   {:name "Blockade"
    :interface? true
-   :migration {:path "src/reverie/blockade/modules/migrations/blockade/"
+   :migration {:path "resources/migrations/modules/blockade/"
                :automatic? true}
    :actions #{:view :edit}
    :required-roles {:view #{:admin :staff}
