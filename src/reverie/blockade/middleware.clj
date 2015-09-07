@@ -1,6 +1,6 @@
 (ns reverie.blockade.middleware
   (:require [clojure.string :as str]
-            [reverie.database :as db]
+            [ez-database.core :as db]
             [yesql.core :refer [defqueries]]))
 
 (defqueries "queries/modules/blockade.sql")
