@@ -1,4 +1,4 @@
-(defproject reverie-blockade "0.9.3"
+(defproject reverie-blockade "0.9.4"
   :description "Block clients based on ip or domain. Written specifically for spambots polluting google analytics and tools"
   :url "https://github.com/emil0r/reverie-blockade"
   :license {:name "Eclipse Public License"

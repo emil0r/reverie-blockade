@@ -1,6 +1,6 @@
 (ns reverie.blockade.modules.blockade
   (:require [reverie.core :refer [defmodule]]
-            vlad))
+            [vlad.core :as vlad]))
 
 
 (defmodule blockade
@@ -20,7 +20,7 @@
            :fields {:title {:name "Title"
                             :type :text
                             :max 255
-                            :validation (vlad/present [:title])}
+                            :validation (vlad/attr [:title] (vlad/present))}
                     :domain {:name "Domain"
                              :type :text
                              :max 1024
