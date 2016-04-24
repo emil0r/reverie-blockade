@@ -18,7 +18,6 @@
   (let [domains (db/query db {:select [:domain :ip]
                               :from [:blockade_list]
                               :where [:= :active_p true]})]
-    (println "get-domains*")
     (->> domains
          (map (fn [{:keys [domain ip]}]
                 [domain ip]))
