@@ -14,9 +14,18 @@
    :template :admin/main
    :entities
    {:list {:name "Blockade list"
-           :order :id
            :table :blockade_list
-           :display [:title :domain :ip :active_p]
+           :interface {:display {:title {:name "Title"
+                                         :link? true
+                                         :sort :t
+                                         :sort-name :id}
+                                 :domain {:name "Domain"
+                                          :sort :d}
+                                 :ip {:name "IP"
+                                      :sort :ip}
+                                 :active_p {:name "Active?"
+                                            :sort :a}}
+                       :default-order :id}
            :fields {:title {:name "Title"
                             :type :text
                             :max 255
